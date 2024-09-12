@@ -68,7 +68,7 @@ Cross platform updates are supported. However, GitHub Releases will be the faste
 ## Build
 
 1. Clone repo
-2. Open in Android Studio
+2. Open in the Android Studio
 3. Click `Run` or do Gradle build
 
 
