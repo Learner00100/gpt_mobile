@@ -1,7 +1,7 @@
 name: Debug build APK
 
 on:
-  pull_request_target:
+  workflow_dispatch:
     branches:
       - "main"
     paths-ignore:
@@ -25,8 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          fetch-depth: 0
 
       - name: Setup JDK
         uses: actions/setup-java@v4
